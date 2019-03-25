@@ -491,6 +491,64 @@
       ],
       "value": ""
     }]
+  }, {
+    "id": "ee096883-8a82-4d17-b523-d07113fd6885",
+    "name": "TestOpenMessagebox",
+    "commands": [{
+      "id": "3b212fcd-4647-40c0-ac3d-68117f62e01c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c9e75de2-04ff-4e9c-bb8a-3d1c559dcfef",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "697x738",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "85ecf5e4-d793-448d-aedb-a4af3dffa6ff",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=My eBay",
+      "targets": [
+        ["linkText=My eBay", "linkText"],
+        ["css=#gh-eb-My .gh-eb-li-a", "css:finder"],
+        ["xpath=//a[contains(text(),'My eBay')]", "xpath:link"],
+        ["xpath=//li[@id='gh-eb-My']/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://my.ebay.ca/ws/eBayISAPI.dll?MyEbay&gbh=1')]", "xpath:href"],
+        ["xpath=//li[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'My eBay')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dcc8110d-4c04-44e2-938b-c6a6ebab95a9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover > a",
+      "targets": [
+        ["css=.hover > a", "css:finder"],
+        ["xpath=//div[@id='top-nav']/div[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://my.ebay.ca/ws/eBayISAPI.dll?MyEbayBeta&CurrentPage=MyeBayMyMessages&ssPageName=STRK%3AME%3ALNLK%3ANone&_trksid=p2060353.m2034.l3912']", "xpath:href"],
+        ["xpath=//div[2]/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0276eed8-18f5-4483-86cd-dcb66bf21c32",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=mainH1",
+      "targets": [
+        ["id=mainH1", "id"],
+        ["css=#mainH1", "css:finder"],
+        ["xpath=//h1[@id='mainH1']", "xpath:attributes"],
+        ["xpath=//span[@id='ebay-title']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"]
+      ],
+      "value": "My eBay: Messages"
+    }]
   }],
   "suites": [{
     "id": "30be00f1-019a-4e20-8c5d-5ff9f6545469",
